@@ -67,7 +67,7 @@ To draw a polygon, first you need coordinates of vertices. Make those points int
     pts = pts.reshape((-1,1,2))
     img = cv2.polylines(img,[pts],True,(0,255,255))
     
-.. Note:: If third argument is ``False``, you will get a polylines joining all the points, not a closed shape.
+.. Note:: If third argument is ``False``, you will get polylines but not a closed shape polyline. First and lost coordinates wont join.
 
 .. Note:: ``cv2.polylines()`` can be used to draw multiple lines. Just create a list of all the lines you want to draw and pass it to the function. All lines will be drawn individually. It is more better and faster way to draw a group of lines than calling ``cv2.line()`` for each line.
 
