@@ -21,7 +21,7 @@ First we create a mouse callback function which is executed when a mouse event t
 
     >>> import cv2
     >>> events = [i for i in dir(cv2) if 'EVENT' in i]
-    >>> print events
+    >>> print(events)
 
 Creating mouse callback function has a specific format which is same everywhere. It differs only in what the function does. So our mouse callback function does one thing, it draws a circle where we double-click. So see the code below. Code is self-explanatory from comments :
 ::
