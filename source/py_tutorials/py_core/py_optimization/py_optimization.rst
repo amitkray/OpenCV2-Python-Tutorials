@@ -42,6 +42,7 @@ We will demonstrate with following example. Following example apply median filte
     # Result I got is 0.521107655 seconds
     
 .. note:: You can do the same with ``time`` module. Instead of ``cv2.getTickCount``, use ``time.time()`` function. Then take the difference of two times.
+Also xrange is for Python 2. In python3 xrange() is changed to range().
 
 
 Default Optimization in OpenCV
